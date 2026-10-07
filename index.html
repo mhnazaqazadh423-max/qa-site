@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>پرسش و پاسخ خانه و زندگی</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+  <div class="container-fluid px-4">
+    <a href="index.html" class="nav-logo navbar-brand">
+      <div class="nav-logo-icon">🏠</div>
+      <div class="nav-logo-text">خانه و <span>زندگی</span></div>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav mx-auto gap-lg-4">
+        <li class="nav-item"><a class="nav-link active" href="index.html">خانه</a></li>
+        <li class="nav-item"><a class="nav-link" href="#categories">دسته‌بندی‌ها</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">درباره ما</a></li>
+      </ul>
+
+      <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+        <div class="search-bar d-none d-lg-flex" style="min-width:200px;">
+          <input type="text" id="searchInput" placeholder="جستجو...">
+          <button class="search-bar-btn"><i class="bi bi-search"></i></button>
+        </div>
+        <a href="login.html" class="btn btn-ghost btn-sm">ورود</a>
+        <a href="register.html" class="btn btn-primary btn-sm">ثبت‌نام رایگان</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!--HERO-->
+<section class="hero" style="padding-top:72px;">
+  <div class="container-fluid container-xl">
+    <div class="row align-items-center min-vh-100">
+
+      <!-- Content -->
+      <div class="col-lg-6">
+        <div class="hero-content ps-lg-4">
+          <div class="hero-eyebrow">
+            <span class="dot"></span>
+            <span>بزرگترین جامعه خانه‌داری ایران</span>
+          </div>
+          <h1 class="hero-title">
+            پاسخ سوالات<br>
+            <span class="highlight">خانه و زندگی</span><br>
+            اینجاست
+          </h1>
+          <p class="hero-desc">
+            از دکوراسیون تا آشپزی، از نگهداری گیاهان تا مدیریت انرژی —
+            هر سوالی دارید بپرسید. جامعه‌ای از متخصصان و همسایگان مهربان اینجا هستند.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="register.html" class="btn btn-primary btn-lg">
+              <i class="bi bi-pencil-fill ms-2"></i>همین الان عضو شوید
+            </a>
+            <a href="#how" class="btn btn-ghost btn-lg">چطور کار می‌کند؟</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <div class="hero-stat-num">۱۲,۴۰۰+</div>
+              <div class="hero-stat-label">سوال پرسیده شده</div>
+            </div>
+            <div>
+              <div class="hero-stat-num">۳۸,۷۰۰+</div>
+              <div class="hero-stat-label">پاسخ ثبت شده</div>
+            </div>
+            <div>
+              <div class="hero-stat-num">۵,۲۰۰+</div>
+              <div class="hero-stat-label">عضو فعال</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual card -->
+      <div class="col-lg-6 d-none d-lg-block">
+        <div class="hero-visual">
+          <div class="hero-visual-main">
+            <div class="hero-visual-bg">🏠</div>
+            <div class="hero-card-content">
+              <span class="hero-card-tag">🔧 تعمیرات</span>
+              <div class="hero-card-q">شیر آب آشپزخانه چکه می‌کند — چطور خودم درست کنم؟</div>
+              <div class="hero-card-meta">
+                <div class="hero-card-avatar">ر</div>
+                <span>رضا.ک</span>
+                <div class="hero-card-votes">⭐ ۴۸</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--HOW IT WORKS-->
+<section id="how" class="py-5" style="background:var(--warm-white);">
+  <div class="container py-4">
+    <div class="text-center mb-5">
+      <span class="label-tag d-block mb-2">راهنما</span>
+      <h2 class="section-title">چطور کار می‌کند؟</h2>
+    </div>
+    <div class="row g-4 justify-content-center">
+
+      <!-- مرحله ۱ -->
+      <div class="col-md-4">
+        <div class="text-center p-4">
+          <div class="mx-auto mb-4 d-flex align-items-center justify-content-center"
+               style="width:72px;height:72px;border-radius:20px;background:rgba(196,113,74,.12);">
+            <i class="bi bi-person-plus-fill" style="font-size:1.8rem;color:var(--terracotta);"></i>
+          </div>
+          <div class="label-tag mb-2">مرحله ۱</div>
+          <h4 style="font-family:var(--font-display);font-size:1.1rem;margin-bottom:10px;">ثبت‌نام کنید</h4>
+          <p style="font-size:.88rem;color:var(--warm-gray);line-height:1.7;">در کمتر از ۲ دقیقه با شماره موبایل عضو شوید و پروفایل خود را بسازید.</p>
+        </div>
+      </div>
+
+      <!-- مرحله ۲ -->
+      <div class="col-md-4">
+        <div class="text-center p-4">
+          <div class="mx-auto mb-4 d-flex align-items-center justify-content-center"
+               style="width:72px;height:72px;border-radius:20px;background:rgba(122,158,126,.12);">
+            <i class="bi bi-question-circle-fill" style="font-size:1.8rem;color:var(--sage);"></i>
+          </div>
+          <div class="label-tag mb-2">مرحله ۲</div>
+          <h4 style="font-family:var(--font-display);font-size:1.1rem;margin-bottom:10px;">سوال بپرسید</h4>
+          <p style="font-size:.88rem;color:var(--warm-gray);line-height:1.7;">سوال خانگی خود را در دسته‌بندی مناسب ثبت کنید تا متخصصان ببینند.</p>
+        </div>
+      </div>
+
+      <!-- مرحله ۳ -->
+      <div class="col-md-4">
+        <div class="text-center p-4">
+          <div class="mx-auto mb-4 d-flex align-items-center justify-content-center"
+               style="width:72px;height:72px;border-radius:20px;background:rgba(201,168,76,.12);">
+            <i class="bi bi-chat-dots-fill" style="font-size:1.8rem;color:var(--gold);"></i>
+          </div>
+          <div class="label-tag mb-2">مرحله ۳</div>
+          <h4 style="font-family:var(--font-display);font-size:1.1rem;margin-bottom:10px;">پاسخ بگیرید</h4>
+          <p style="font-size:.88rem;color:var(--warm-gray);line-height:1.7;">در کوتاه‌ترین زمان پاسخ‌های کاربردی دریافت کنید و امتیاز کسب کنید.</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="text-center mt-4">
+      <a href="register.html" class="btn btn-primary btn-lg">شروع کنید — رایگان است ←</a>
+    </div>
+  </div>
+</section>
+
+<!--CATEGORIES-->
+<section id="categories" class="py-5" style="background:var(--cream);">
+  <div class="container py-3">
+    <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap gap-2">
+      <h2 class="section-title mb-0">دسته‌بندی‌ها</h2>
+      <a href="register.html" style="font-size:.85rem;color:var(--terracotta);font-weight:600;">برای مشاهده سوالات عضو شوید ←</a>
+    </div>
+    <div class="row g-3">
+
+      <div class="col-6 col-md-3">
+        <a href="register.html" class="question-card text-center p-4 d-block" style="text-decoration:none;">
+          <div style="font-size:2rem;margin-bottom:10px;">🎨</div>
+          <div style="font-family:var(--font-display);font-weight:600;font-size:.95rem;color:var(--charcoal);margin-bottom:4px;">دکوراسیون</div>
+          <div style="font-size:.75rem;color:var(--warm-gray);">۲,۱۰۰ سوال</div>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <a href="register.html" class="question-card text-center p-4 d-block" style="text-decoration:none;">
+          <div style="font-size:2rem;margin-bottom:10px;">🍳</div>
+          <div style="font-family:var(--font-display);font-weight:600;font-size:.95rem;color:var(--charcoal);margin-bottom:4px;">آشپزی</div>
+          <div style="font-size:.75rem;color:var(--warm-gray);">۳,۴۰۰ سوال</div>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <a href="register.html" class="question-card text-center p-4 d-block" style="text-decoration:none;">
+          <div style="font-size:2rem;margin-bottom:10px;">🌿</div>
+          <div style="font-family:var(--font-display);font-weight:600;font-size:.95rem;color:var(--charcoal);margin-bottom:4px;">گیاهان</div>
+          <div style="font-size:.75rem;color:var(--warm-gray);">۱,۸۰۰ سوال</div>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <a href="register.html" class="question-card text-center p-4 d-block" style="text-decoration:none;">
+          <div style="font-size:2rem;margin-bottom:10px;">🔧</div>
+          <div style="font-family:var(--font-display);font-weight:600;font-size:.95rem;color:var(--charcoal);margin-bottom:4px;">تعمیرات</div>
+          <div style="font-size:.75rem;color:var(--warm-gray);">۲,۵۰۰ سوال</div>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <a href="register.html" class="question-card text-center p-4 d-block" style="text-decoration:none;">
+          <div style="font-size:2rem;margin-bottom:10px;">🧹</div>
+          <div style="font-family:var(--font-display);font-weight:600;font-size:.95rem;color:var(--charcoal);margin-bottom:4px;">نظافت</div>
+          <div style="font-size:.75rem;color:var(--warm-gray);">۱,۲۰۰ سوال</div>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <a href="register.html" class="question-card text-center p-4 d-block" style="text-decoration:none;">
+          <div style="font-size:2rem;margin-bottom:10px;">⚡</div>
+          <div style="font-family:var(--font-display);font-weight:600;font-size:.95rem;color:var(--charcoal);margin-bottom:4px;">صرفه‌جویی</div>
+          <div style="font-size:.75rem;color:var(--warm-gray);">۹۰۰ سوال</div>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <a href="register.html" class="question-card text-center p-4 d-block" style="text-decoration:none;">
+          <div style="font-size:2rem;margin-bottom:10px;">🛋</div>
+          <div style="font-family:var(--font-display);font-weight:600;font-size:.95rem;color:var(--charcoal);margin-bottom:4px;">مبلمان</div>
+          <div style="font-size:.75rem;color:var(--warm-gray);">۷۵۰ سوال</div>
+        </a>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <a href="register.html" class="question-card text-center p-4 d-block" style="text-decoration:none;">
+          <div style="font-size:2rem;margin-bottom:10px;">🏠</div>
+          <div style="font-family:var(--font-display);font-weight:600;font-size:.95rem;color:var(--charcoal);margin-bottom:4px;">عمومی</div>
+          <div style="font-size:.75rem;color:var(--warm-gray);">۱,۴۰۰ سوال</div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--PREVIEW QUESTIONS (blurred, teaser)-->
+<section class="py-5" style="background:var(--warm-white);position:relative;">
+  <div class="container py-3">
+    <div class="text-center mb-4">
+      <span class="label-tag d-block mb-2">نمونه سوالات</span>
+      <h2 class="section-title">ببینید چه سوالاتی مطرح است</h2>
+    </div>
+
+    <!-- Blurred teaser cards -->
+    <div class="questions-grid" style="filter:blur(3px);pointer-events:none;user-select:none;">
+
+      <div class="question-card">
+        <div class="q-card-header">
+          <span class="q-card-cat">🎨 دکوراسیون</span>
+          <span class="q-card-status open">⏳ باز</span>
+        </div>
+        <h3 class="q-card-title">بهترین رنگ برای دیوار اتاق کوچک چیست؟</h3>
+        <p class="q-card-excerpt">رنگ روشن یا تیره؟ اتاق ۱۲ متری دارم...</p>
+        <div class="q-card-footer">
+          <div class="q-card-user">
+            <div class="q-card-avatar">ن</div>
+            <div>
+              <div class="q-card-username">نازنین.م</div>
+              <div class="q-card-time">۳ ساعت پیش</div>
+            </div>
+          </div>
+          <div class="q-card-stats">
+            <div class="q-stat votes">⭐ <span>۴۸</span></div>
+            <div class="q-stat">💬 <span>۷</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="question-card">
+        <div class="q-card-header">
+          <span class="q-card-cat">🍳 آشپزی</span>
+          <span class="q-card-status open">⏳ باز</span>
+        </div>
+        <h3 class="q-card-title">چرا ماکارونی همیشه به هم می‌چسبد بعد از پخت؟</h3>
+        <p class="q-card-excerpt">هر بار که ماکارونی می‌پزم بعد از کشیدن آب...</p>
+        <div class="q-card-footer">
+          <div class="q-card-user">
+            <div class="q-card-avatar">ف</div>
+            <div>
+              <div class="q-card-username">فریده.ک</div>
+              <div class="q-card-time">۵ ساعت پیش</div>
+            </div>
+          </div>
+          <div class="q-card-stats">
+            <div class="q-stat votes">⭐ <span>۳۲</span></div>
+            <div class="q-stat">💬 <span>۱۲</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="question-card">
+        <div class="q-card-header">
+          <span class="q-card-cat">🌿 گیاهان</span>
+          <span class="q-card-status answered">✓ پاسخ داده شده</span>
+        </div>
+        <h3 class="q-card-title">برگ‌های سانسویریا زرد می‌شوند — دلیل و راه حل؟</h3>
+        <p class="q-card-excerpt">سانسویرام که ۲ سال داشتم اخیراً برگ‌هاش زرد...</p>
+        <div class="q-card-footer">
+          <div class="q-card-user">
+            <div class="q-card-avatar">ش</div>
+            <div>
+              <div class="q-card-username">شهرزاد.ع</div>
+              <div class="q-card-time">دیروز</div>
+            </div>
+          </div>
+          <div class="q-card-stats">
+            <div class="q-stat votes">⭐ <span>۶۱</span></div>
+            <div class="q-stat">💬 <span>۵</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Overlay CTA -->
+    <div style="position:relative;margin-top:-80px;background:linear-gradient(to top,var(--warm-white) 60%,transparent);padding-top:80px;text-align:center;z-index:2;">
+      <div style="background:var(--warm-white);border:1px solid var(--border);border-radius:var(--radius-xl);padding:32px 40px;max-width:500px;margin:0 auto;box-shadow:var(--shadow-card);">
+        <div style="font-size:2.5rem;margin-bottom:12px;">🔒</div>
+        <h3 style="font-family:var(--font-display);font-size:1.3rem;margin-bottom:8px;">برای دیدن همه سوالات عضو شوید</h3>
+        <p style="font-size:.88rem;color:var(--warm-gray);margin-bottom:24px;">بیش از ۱۲,۰۰۰ سوال و پاسخ منتظر شماست. عضویت کاملاً رایگان است.</p>
+        <a href="register.html" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">ثبت‌نام رایگان ←</a>
+        <div class="mt-3" style="font-size:.82rem;color:var(--warm-gray);">قبلاً عضو شده‌اید؟ <a href="login.html" style="color:var(--terracotta);font-weight:600;">وارد شوید</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-4 mb-5">
+      <div class="col-lg-4">
+        <a href="index.html" class="nav-logo d-inline-flex mb-3">
+          <div class="nav-logo-icon">🏠</div>
+          <div class="nav-logo-text" style="color:#fff;">خانه و <span>زندگی</span></div>
+        </a>
+        <p class="footer-brand-desc">بزرگترین جامعه آنلاین پرسش و پاسخ در حوزه خانه و زندگی در ایران.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn"><i class="bi bi-telegram"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <div class="footer-col-title">دسته‌بندی‌ها</div>
+        <div class="footer-links">
+          <a href="register.html">دکوراسیون</a>
+          <a href="register.html">آشپزی</a>
+          <a href="register.html">تعمیرات</a>
+          <a href="register.html">گیاهان</a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <div class="footer-col-title">دسترسی سریع</div>
+        <div class="footer-links">
+          <a href="register.html">ثبت‌نام</a>
+          <a href="login.html">ورود</a>
+          <a href="#how">راهنما</a>
+          <a href="#about">درباره ما</a>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="footer-col-title">عضو نشده‌اید؟</div>
+        <p style="font-size:.85rem;color:rgba(255,255,255,.5);margin-bottom:16px;">همین الان رایگان ثبت‌نام کنید و به هزاران سوال دسترسی داشته باشید.</p>
+        <a href="register.html" class="btn btn-primary">ثبت‌نام رایگان ←</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="toast-container"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
